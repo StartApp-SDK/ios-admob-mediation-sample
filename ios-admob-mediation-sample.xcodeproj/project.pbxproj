@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49EBBE232667B1750043E60D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE222667B1750043E60D /* AppDelegate.m */; };
+		49EBBE262667B1750043E60D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE252667B1750043E60D /* SceneDelegate.m */; };
+		49EBBE292667B1750043E60D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE282667B1750043E60D /* ViewController.m */; };
+		49EBBE2C2667B1750043E60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EBBE2A2667B1750043E60D /* Main.storyboard */; };
+		49EBBE2E2667B17B0043E60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EBBE2D2667B17B0043E60D /* Assets.xcassets */; };
+		49EBBE312667B17B0043E60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EBBE2F2667B17B0043E60D /* LaunchScreen.storyboard */; };
+		49EBBE342667B17B0043E60D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE332667B17B0043E60D /* main.m */; };
+		49EBBE3D266A4D860043E60D /* NativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE3C266A4D860043E60D /* NativeAdView.m */; };
+		A737694FC27D4F63E76D89C4 /* Pods_ios_admob_mediation_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD1D59C7A96F71443641E20 /* Pods_ios_admob_mediation_sample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49EBBE1E2667B1750043E60D /* ios-admob-mediation-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-admob-mediation-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EBBE212667B1750043E60D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49EBBE222667B1750043E60D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49EBBE242667B1750043E60D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		49EBBE252667B1750043E60D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		49EBBE272667B1750043E60D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		49EBBE282667B1750043E60D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49EBBE2B2667B1750043E60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49EBBE2D2667B17B0043E60D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49EBBE302667B17B0043E60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49EBBE322667B17B0043E60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49EBBE332667B17B0043E60D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49EBBE3A2667B2C40043E60D /* modern-objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "modern-objc.h"; sourceTree = "<group>"; };
+		49EBBE3B266A4D850043E60D /* NativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAdView.h; sourceTree = "<group>"; };
+		49EBBE3C266A4D860043E60D /* NativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAdView.m; sourceTree = "<group>"; };
+		90D4F622BC1B217D00B75F2F /* Pods-ios-admob-mediation-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-admob-mediation-sample.debug.xcconfig"; path = "Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample.debug.xcconfig"; sourceTree = "<group>"; };
+		ACD1D59C7A96F71443641E20 /* Pods_ios_admob_mediation_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_admob_mediation_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25615A23E6EFE20658403FD /* Pods-ios-admob-mediation-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-admob-mediation-sample.release.xcconfig"; path = "Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49EBBE1B2667B1750043E60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A737694FC27D4F63E76D89C4 /* Pods_ios_admob_mediation_sample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49EBBE152667B1750043E60D = {
+			isa = PBXGroup;
+			children = (
+				49EBBE202667B1750043E60D /* ios-admob-mediation-sample */,
+				49EBBE1F2667B1750043E60D /* Products */,
+				D9B18AB6A328297674C2C538 /* Pods */,
+				DD8AF4E67783142C3C07F991 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49EBBE1F2667B1750043E60D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49EBBE1E2667B1750043E60D /* ios-admob-mediation-sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49EBBE202667B1750043E60D /* ios-admob-mediation-sample */ = {
+			isa = PBXGroup;
+			children = (
+				49EBBE3B266A4D850043E60D /* NativeAdView.h */,
+				49EBBE3C266A4D860043E60D /* NativeAdView.m */,
+				49EBBE212667B1750043E60D /* AppDelegate.h */,
+				49EBBE222667B1750043E60D /* AppDelegate.m */,
+				49EBBE242667B1750043E60D /* SceneDelegate.h */,
+				49EBBE252667B1750043E60D /* SceneDelegate.m */,
+				49EBBE272667B1750043E60D /* ViewController.h */,
+				49EBBE282667B1750043E60D /* ViewController.m */,
+				49EBBE2A2667B1750043E60D /* Main.storyboard */,
+				49EBBE2D2667B17B0043E60D /* Assets.xcassets */,
+				49EBBE2F2667B17B0043E60D /* LaunchScreen.storyboard */,
+				49EBBE322667B17B0043E60D /* Info.plist */,
+				49EBBE332667B17B0043E60D /* main.m */,
+				49EBBE3A2667B2C40043E60D /* modern-objc.h */,
+			);
+			path = "ios-admob-mediation-sample";
+			sourceTree = "<group>";
+		};
+		D9B18AB6A328297674C2C538 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90D4F622BC1B217D00B75F2F /* Pods-ios-admob-mediation-sample.debug.xcconfig */,
+				C25615A23E6EFE20658403FD /* Pods-ios-admob-mediation-sample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD8AF4E67783142C3C07F991 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACD1D59C7A96F71443641E20 /* Pods_ios_admob_mediation_sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49EBBE1D2667B1750043E60D /* ios-admob-mediation-sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49EBBE372667B17B0043E60D /* Build configuration list for PBXNativeTarget "ios-admob-mediation-sample" */;
+			buildPhases = (
+				B9A2908A863CABD041642BC7 /* [CP] Check Pods Manifest.lock */,
+				49EBBE1A2667B1750043E60D /* Sources */,
+				49EBBE1B2667B1750043E60D /* Frameworks */,
+				49EBBE1C2667B1750043E60D /* Resources */,
+				F86340CC8715ADC54C86E6B6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-admob-mediation-sample";
+			productName = "ios-admob-mediation-sample";
+			productReference = 49EBBE1E2667B1750043E60D /* ios-admob-mediation-sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49EBBE162667B1750043E60D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					49EBBE1D2667B1750043E60D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 49EBBE192667B1750043E60D /* Build configuration list for PBXProject "ios-admob-mediation-sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49EBBE152667B1750043E60D;
+			productRefGroup = 49EBBE1F2667B1750043E60D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49EBBE1D2667B1750043E60D /* ios-admob-mediation-sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49EBBE1C2667B1750043E60D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EBBE312667B17B0043E60D /* LaunchScreen.storyboard in Resources */,
+				49EBBE2E2667B17B0043E60D /* Assets.xcassets in Resources */,
+				49EBBE2C2667B1750043E60D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9A2908A863CABD041642BC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-admob-mediation-sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86340CC8715ADC54C86E6B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49EBBE1A2667B1750043E60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EBBE3D266A4D860043E60D /* NativeAdView.m in Sources */,
+				49EBBE292667B1750043E60D /* ViewController.m in Sources */,
+				49EBBE232667B1750043E60D /* AppDelegate.m in Sources */,
+				49EBBE342667B17B0043E60D /* main.m in Sources */,
+				49EBBE262667B1750043E60D /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49EBBE2A2667B1750043E60D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49EBBE2B2667B1750043E60D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49EBBE2F2667B17B0043E60D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49EBBE302667B17B0043E60D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49EBBE352667B17B0043E60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49EBBE362667B17B0043E60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49EBBE382667B17B0043E60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D4F622BC1B217D00B75F2F /* Pods-ios-admob-mediation-sample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33VM6V4F88;
+				GCC_PREFIX_HEADER = "$(TARGETNAME)/modern-objc.h";
+				INFOPLIST_FILE = "ios-admob-mediation-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.start.ios-admob-mediation-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49EBBE392667B17B0043E60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C25615A23E6EFE20658403FD /* Pods-ios-admob-mediation-sample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33VM6V4F88;
+				GCC_PREFIX_HEADER = "$(TARGETNAME)/modern-objc.h";
+				INFOPLIST_FILE = "ios-admob-mediation-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.start.ios-admob-mediation-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49EBBE192667B1750043E60D /* Build configuration list for PBXProject "ios-admob-mediation-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EBBE352667B17B0043E60D /* Debug */,
+				49EBBE362667B17B0043E60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49EBBE372667B17B0043E60D /* Build configuration list for PBXNativeTarget "ios-admob-mediation-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EBBE382667B17B0043E60D /* Debug */,
+				49EBBE392667B17B0043E60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49EBBE162667B1750043E60D /* Project object */;
+}

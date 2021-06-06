@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please load any ad!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnw-Or-B4k">
+                                <rect key="frame" x="0.0" y="44" width="414" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="9rs-53-U3d"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pP7-Wh-2EH">
+                                <rect key="frame" x="0.0" y="180" width="414" height="214"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mxC-5k-Gq6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b44-IY-oej">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
+                                                <state key="normal" title="Load Interstitial"/>
+                                                <connections>
+                                                    <action selector="loadInterstitial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MC4-oK-jC4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ael-Uc-0wP">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="30"/>
+                                                <state key="normal" title="Show Interstitial"/>
+                                                <connections>
+                                                    <action selector="showInterstitial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYx-3M-gPW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uoJ-4u-El8">
+                                        <rect key="frame" x="0.0" y="46" width="414" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmn-Bn-FJe">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
+                                                <state key="normal" title="Load Rewarded"/>
+                                                <connections>
+                                                    <action selector="loadRewarded:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxA-Ke-W5A"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCT-iu-u4x">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="30"/>
+                                                <state key="normal" title="Show Rewarded"/>
+                                                <connections>
+                                                    <action selector="showRewarded:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4R8-oy-tV4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lNI-6b-bKR">
+                                        <rect key="frame" x="0.0" y="92" width="414" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyH-Th-XWN">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
+                                                <state key="normal" title="Load Native"/>
+                                                <connections>
+                                                    <action selector="loadNative:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9IM-LZ-FCF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvD-bG-J4U">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="30"/>
+                                                <state key="normal" title="Show Native"/>
+                                                <connections>
+                                                    <action selector="showNative:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iZU-P0-RGC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eTe-h1-Jcm">
+                                        <rect key="frame" x="0.0" y="138" width="414" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF5-AH-7KD">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                <state key="normal" title="Load Banner"/>
+                                                <connections>
+                                                    <action selector="loadBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLT-kw-xNr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ina-1y-kwp">
+                                        <rect key="frame" x="0.0" y="184" width="414" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fl-Mb-T4H">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                <state key="normal" title="Load MREC"/>
+                                                <connections>
+                                                    <action selector="loadMREC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ws0-Q6-fZv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pP7-Wh-2EH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VsM-dL-ecC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jnw-Or-B4k" secondAttribute="trailing" id="jO7-YE-aXM"/>
+                            <constraint firstItem="jnw-Or-B4k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lnG-6X-LWg"/>
+                            <constraint firstItem="jnw-Or-B4k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sDE-on-hOS"/>
+                            <constraint firstItem="pP7-Wh-2EH" firstAttribute="top" secondItem="jnw-Or-B4k" secondAttribute="bottom" constant="8" symbolic="YES" id="tBJ-l6-6Pg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pP7-Wh-2EH" secondAttribute="trailing" id="vl1-dK-hKZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageTextView" destination="jnw-Or-B4k" id="e0D-Vh-e0m"/>
+                        <outlet property="showInterstitialButton" destination="ael-Uc-0wP" id="snP-2H-MbE"/>
+                        <outlet property="showNativeButton" destination="JvD-bG-J4U" id="bNW-Hb-hT2"/>
+                        <outlet property="showRewardedButton" destination="TCT-iu-u4x" id="RLW-el-Rv0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
