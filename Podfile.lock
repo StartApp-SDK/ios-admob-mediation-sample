@@ -39,9 +39,11 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
+  - StartAppSDK (4.6.4)
 
 DEPENDENCIES:
-  - Google-Mobile-Ads-SDK
+  - Google-Mobile-Ads-SDK (~> 8.5.0)
+  - StartAppSDK (~> 4.6.4)
 
 SPEC REPOS:
   trunk:
@@ -51,6 +53,7 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - PromisesObjC
+    - StartAppSDK
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 6f5c41bf73db1656e5b203ba9c31e3d0899a128d
@@ -59,7 +62,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: f8a43108b38a68eebe8b3540e1f4f2d28843ce20
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  StartAppSDK: cb5a43363fc10ee4977b42f77d81b995d73262f0
 
-PODFILE CHECKSUM: f0b1d85beb56dd223d9292e5d9c7ee6ae114189a
+PODFILE CHECKSUM: b1b5dc8b222cb0ce1b25cd4a64f8cc4c849928ab
 
 COCOAPODS: 1.10.1

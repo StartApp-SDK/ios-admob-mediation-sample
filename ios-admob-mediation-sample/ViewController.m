@@ -42,6 +42,8 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
 @property (nonatomic, nullable) GADNativeAd* nativeAd;
 @property (nonatomic, nullable) NativeAdView* nativeView;
 
+@property (nonatomic) BOOL needToStrechInlineView;
+
 @end
 
 @implementation ViewController
@@ -55,7 +57,7 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
 
 - (IBAction)loadInterstitial:(UIButton*)sender {
     let adRequest = [GADRequest request];
-    [GADInterstitialAd loadWithAdUnitID:kTestInterstitialId
+    [GADInterstitialAd loadWithAdUnitID:kInterstitialId
                                 request:adRequest
                       completionHandler:^(GADInterstitialAd* _Nullable ad, NSError* _Nullable error) {
         if (error) {
@@ -82,7 +84,7 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
 
 - (IBAction)loadRewarded:(UIButton*)sender {
     let request = [GADRequest request];
-    [GADRewardedAd loadWithAdUnitID:kTestRewardedId
+    [GADRewardedAd loadWithAdUnitID:kRewardedId
                             request:request
                   completionHandler:^(GADRewardedAd* _Nullable rewardedAd, NSError* _Nullable error) {
         if (error) {
@@ -112,7 +114,7 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
 
 - (IBAction)loadNative:(UIButton*)sender {
     self.nativeLoader = [[GADAdLoader alloc]
-                initWithAdUnitID:kTestNativeId
+                initWithAdUnitID:kNativeId
               rootViewController:self
                          adTypes:@[kGADAdLoaderAdTypeNative]
                          options:@[]];
@@ -126,7 +128,7 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
     [self cleanBottomEdge];
     
     self.nativeView = [[NativeAdView alloc] initWithNativeAd:self.nativeAd];
-    [self addViewStretchedOnBottomEdge:self.nativeView];
+    [self addViewStretchedOnBottomEdge:self.nativeView height:270];
     self.showNativeButton.enabled = NO;
 }
 
@@ -179,13 +181,15 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
 - (IBAction)loadBanner:(UIButton*)sender {
     [self cleanBottomEdge];
     
-    self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
-    self.bannerView.adUnitID = kTestBannerId;
+    self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeFluid];
+    self.bannerView.adUnitID = kBannerId;
     self.bannerView.rootViewController = self;
     self.bannerView.delegate = self;
     
     let adRequest = [GADRequest request];
     [self.bannerView loadRequest:adRequest];
+    
+    self.needToStrechInlineView = YES;
 }
 
 #pragma mark - MREC
@@ -194,12 +198,14 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
     [self cleanBottomEdge];
     
     self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeMediumRectangle];
-    self.bannerView.adUnitID = kTestBannerId;
+    self.bannerView.adUnitID = kBannerId;
     self.bannerView.rootViewController = self;
     self.bannerView.delegate = self;
     
     let adRequest = [GADRequest request];
     [self.bannerView loadRequest:adRequest];
+    
+    self.needToStrechInlineView = NO;
 }
 
 #pragma mark - FullScreen Delegate
@@ -233,9 +239,12 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
 
 - (void)bannerViewDidReceiveAd:(nonnull GADBannerView*)view {
     [self logMessage:NSStringFromSelector(_cmd)];
-    [self addViewCenteredOnBottomEdge:view];
+    if (self.needToStrechInlineView) {
+        [self addViewStretchedOnBottomEdge:view height:50];
+    } else {
+        [self addViewCenteredOnBottomEdge:view];
+    }
 }
-
 
 - (void)bannerView:(nonnull GADBannerView*)bannerView didFailToReceiveAdWithError:(nonnull NSError*)error {
     [self logMessage:NSStringFromSelector(_cmd)];
@@ -267,12 +276,13 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
     ]];
 }
 
-- (void)addViewStretchedOnBottomEdge:(UIView*)view {
+- (void)addViewStretchedOnBottomEdge:(UIView*)view height:(CGFloat)height {
     [self addViewAnimated:view];
     [NSLayoutConstraint activateConstraints:@[
         [view.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor],
         [view.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor],
-        [view.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor]
+        [view.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor],
+        [view.heightAnchor constraintEqualToConstant:height]
     ]];
 }
 

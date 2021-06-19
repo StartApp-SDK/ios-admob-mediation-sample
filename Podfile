@@ -1,8 +1,17 @@
 platform :ios, '10.0'
+use_frameworks!
+
+workspace 'ios-admob-mediation-sample'
+
+def ios_admob_mediation_pods
+  podspec :path => '../ios-admob-mediation/startio-admob-mediation.podspec'
+end
 
 target 'ios-admob-mediation-sample' do
-  use_frameworks!
+  ios_admob_mediation_pods
+end
 
-  pod 'Google-Mobile-Ads-SDK'
-
+target 'StartioAdmobMediation' do
+  project '../ios-admob-mediation/StartioAdmobMediation.xcodeproj'
+  ios_admob_mediation_pods
 end

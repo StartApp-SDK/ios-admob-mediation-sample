@@ -85,7 +85,7 @@
             @"H:|-[sponsored]-|",
             @"V:[call2action]-[title]",
             @"V:[stars]-[title]",
-            @"V:[icon(50)]-[title]-[description]-[image(100)]-[sponsored]-|"
+            @"V:[icon(50)]-[title]-[description(<=60)]-[image(100)]-[sponsored]-|"
         ];
         
         for (NSString* visualConstraints in vfc) {

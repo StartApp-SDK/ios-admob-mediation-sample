@@ -5,6 +5,9 @@
       location = "group:ios-admob-mediation-sample.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../ios-admob-mediation/StartioAdmobMediation.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

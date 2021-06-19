@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49E0C5C12671F37F0003B461 /* libStartioAdmobMediation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E0C5C02671F37F0003B461 /* libStartioAdmobMediation.a */; };
 		49EBBE232667B1750043E60D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE222667B1750043E60D /* AppDelegate.m */; };
 		49EBBE262667B1750043E60D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE252667B1750043E60D /* SceneDelegate.m */; };
 		49EBBE292667B1750043E60D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE282667B1750043E60D /* ViewController.m */; };
@@ -15,10 +16,18 @@
 		49EBBE312667B17B0043E60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EBBE2F2667B17B0043E60D /* LaunchScreen.storyboard */; };
 		49EBBE342667B17B0043E60D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE332667B17B0043E60D /* main.m */; };
 		49EBBE3D266A4D860043E60D /* NativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBBE3C266A4D860043E60D /* NativeAdView.m */; };
-		A737694FC27D4F63E76D89C4 /* Pods_ios_admob_mediation_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD1D59C7A96F71443641E20 /* Pods_ios_admob_mediation_sample.framework */; };
+		DA2596AB4D844B952DE70542 /* Pods_ios_admob_mediation_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD1D59C7A96F71443641E20 /* Pods_ios_admob_mediation_sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49E0C58C266ED74C0003B461 /* StartioAdmobMediation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StartioAdmobMediation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E0C590266ED87A0003B461 /* StartioAdmobMediation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StartioAdmobMediation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E0C594266F51620003B461 /* StartioAdmobMediation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StartioAdmobMediation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E0C59C266F559F0003B461 /* StartioAdmobMediation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StartioAdmobMediation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E0C5A0266F56CB0003B461 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		49E0C5A3266F595E0003B461 /* StartioAdmobMediation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StartioAdmobMediation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E0C5A7267174D70003B461 /* Pods_StartioAdmobMediation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_StartioAdmobMediation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E0C5C02671F37F0003B461 /* libStartioAdmobMediation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStartioAdmobMediation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EBBE1E2667B1750043E60D /* ios-admob-mediation-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-admob-mediation-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EBBE212667B1750043E60D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49EBBE222667B1750043E60D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,7 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A737694FC27D4F63E76D89C4 /* Pods_ios_admob_mediation_sample.framework in Frameworks */,
+				DA2596AB4D844B952DE70542 /* Pods_ios_admob_mediation_sample.framework in Frameworks */,
+				49E0C5C12671F37F0003B461 /* libStartioAdmobMediation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +112,14 @@
 		DD8AF4E67783142C3C07F991 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49E0C5C02671F37F0003B461 /* libStartioAdmobMediation.a */,
+				49E0C5A7267174D70003B461 /* Pods_StartioAdmobMediation.framework */,
+				49E0C5A3266F595E0003B461 /* StartioAdmobMediation.framework */,
+				49E0C5A0266F56CB0003B461 /* Accelerate.framework */,
+				49E0C59C266F559F0003B461 /* StartioAdmobMediation.framework */,
+				49E0C594266F51620003B461 /* StartioAdmobMediation.framework */,
+				49E0C590266ED87A0003B461 /* StartioAdmobMediation.framework */,
+				49E0C58C266ED74C0003B461 /* StartioAdmobMediation.framework */,
 				ACD1D59C7A96F71443641E20 /* Pods_ios_admob_mediation_sample.framework */,
 			);
 			name = Frameworks;
@@ -118,7 +136,7 @@
 				49EBBE1A2667B1750043E60D /* Sources */,
 				49EBBE1B2667B1750043E60D /* Frameworks */,
 				49EBBE1C2667B1750043E60D /* Resources */,
-				F86340CC8715ADC54C86E6B6 /* [CP] Embed Pods Frameworks */,
+				33ACA8D6F48441E6725FDFA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +192,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		33ACA8D6F48441E6725FDFA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B9A2908A863CABD041642BC7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,23 +229,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F86340CC8715ADC54C86E6B6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-admob-mediation-sample/Pods-ios-admob-mediation-sample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
