@@ -116,7 +116,7 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
     self.nativeLoader = [[GADAdLoader alloc]
                 initWithAdUnitID:kNativeId
               rootViewController:self
-                         adTypes:@[kGADAdLoaderAdTypeNative]
+                         adTypes:@[GADAdLoaderAdTypeNative]
                          options:@[]];
     self.nativeLoader.delegate = self;
     
@@ -181,7 +181,7 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
 - (IBAction)loadBanner:(UIButton*)sender {
     [self cleanBottomEdge];
     
-    self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeFluid];
+    self.bannerView = [[GADBannerView alloc] initWithAdSize:GADAdSizeFluid];
     self.bannerView.adUnitID = kBannerId;
     self.bannerView.rootViewController = self;
     self.bannerView.delegate = self;
@@ -197,7 +197,7 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
 - (IBAction)loadMREC:(UIButton*)sender {
     [self cleanBottomEdge];
     
-    self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeMediumRectangle];
+    self.bannerView = [[GADBannerView alloc] initWithAdSize:GADAdSizeMediumRectangle];
     self.bannerView.adUnitID = kBannerId;
     self.bannerView.rootViewController = self;
     self.bannerView.delegate = self;
