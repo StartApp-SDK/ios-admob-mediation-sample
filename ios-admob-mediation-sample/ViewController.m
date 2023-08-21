@@ -220,7 +220,7 @@ static let kTestNativeId = @"ca-app-pub-3940256099942544/3986624511";
     [self enable:NO showButtonForAd:ad];
 }
 
-- (void)adDidPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
+- (void)adWillPresentFullScreenContent:(id<GADFullScreenPresentingAd>)ad {
     [self logMessage:NSStringFromSelector(_cmd)];
     [self enable:NO showButtonForAd:ad];
 }
