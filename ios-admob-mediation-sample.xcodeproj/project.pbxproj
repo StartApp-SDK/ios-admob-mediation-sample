@@ -77,7 +77,6 @@
 			children = (
 				49EBBE202667B1750043E60D /* ios-admob-mediation-sample */,
 				49EBBE1F2667B1750043E60D /* Products */,
-				D9B18AB6A328297674C2C538 /* Pods */,
 				DD8AF4E67783142C3C07F991 /* Frameworks */,
 				BB7D34982CEFAC7700970A61 /* ios-admob-mediation-sample-spm-Info.plist */,
 			);
@@ -111,13 +110,6 @@
 				49EBBE3A2667B2C40043E60D /* modern-objc.h */,
 			);
 			path = "ios-admob-mediation-sample";
-			sourceTree = "<group>";
-		};
-		D9B18AB6A328297674C2C538 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		DD8AF4E67783142C3C07F991 /* Frameworks */ = {
@@ -394,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33VM6V4F88;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "ios-admob-mediation-sample/modern-objc.h";
 				INFOPLIST_FILE = "ios-admob-mediation-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,7 +409,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33VM6V4F88;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "ios-admob-mediation-sample/modern-objc.h";
 				INFOPLIST_FILE = "ios-admob-mediation-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33VM6V4F88;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "ios-admob-mediation-sample/modern-objc.h";
 				INFOPLIST_FILE = "ios-admob-mediation-sample-spm-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,7 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33VM6V4F88;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "ios-admob-mediation-sample/modern-objc.h";
 				INFOPLIST_FILE = "ios-admob-mediation-sample-spm-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
